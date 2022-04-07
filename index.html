@@ -5,38 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flex product Senpai </title>
+    <link rel="stylesheet" href="style.min.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <article id="article-logo-header">
-                <img src="img/logo-verde.png" alt="Logo verde Senpai">
+        <button id="burger-button">
+            <div class="burger-div-button"></div>
+            <div class="burger-div-button"></div>
+            <div class="burger-div-button"></div>
+        </button>
+
+        <nav id="nav-home">
+            <a id="link-logo-header">
+                <img src="img/logo-verde.png" alt="Logo verde Senpai" class="logo">
                 <span>Flex</span>
-            </article>
+            </a>
             <ul>
-                <li>Producto</li>
-                <li>Características</li>
-                <li>Precios</li>
+                <li><a href="" class="nav-item">Producto</a></li>
+                <li><a href="" class="nav-item">Características</a></li>
+                <li><a href="" class="nav-item">Precios</a></li>
             </ul>
             <ul>
-                <li><button>Ingresar</button></li>
-                <li><button>Registrarse</button></li>
+                <li><button id="ingresar-modal-btn">Ingresar</button></li>
+                <li><button id="boton-registrarse-nav">Registrarse</button></li>
             </ul>
-            <section>
-                <article>
-                    <h5>Nuevo</h5>
-                    <h1>La plataforma para las empresas del futuro</h1>
-                    <p>Productos pensados para los negocios del próximo siglo</p>
-                    <ul>
-                        <li><button>Solicitar demo</button></li>
-                        <li><button>Registrarse</button></li>
-                    </ul>
-                </article>
-                <img src="img/header.jpg" alt="foto de las oficinas, mesas grandes con ordenadores y gente trabajando.">
-            </section>
         </nav>
+        <section id="section-header">
+            <article>
+                <h5>Nuevo</h5>
+                <h1>La plataforma para las empresas del futuro</h1>
+                <p>Productos pensados para los negocios del próximo siglo</p>
+                <ul>
+                    <li><button>Solicitar demo</button></li>
+                    <li><button>Registrarse</button></li>
+                </ul>
+            </article>
+            <figure id="image-header">
+                <img src="img/header.jpg" alt="foto de las oficinas, mesas grandes con ordenadores y gente trabajando.">
+            </figure>
+        </section>
+
 
     </header>
     <main>
@@ -68,7 +79,7 @@
                     <span class="span-precio">Precio</span>
                     <span class="span-planes">Plan básico</span>
                     <h3 class="h3-precios-planes">$10 /mes</h3>
-                    <p class="pe-facutrado-anualmente">Facturado anualmente</p>
+                    <p class="pe-facturado-anualmente">Facturado anualmente</p>
                     <ul class="lista-caracteristicas-servicio">
                         <li class="item-caracteristicas-servicio">1GB de almacenamiento</li>
                         <li class="item-caracteristicas-servicio">Dashboard completo</li>
@@ -81,7 +92,7 @@
                     <span class="span-precio">Precio</span>
                     <span class="span-planes">Plan freelancer</span>
                     <h3 class="h3-precios-planes">$99 /mes</h3>
-                    <p class="pe-facutrado-anualmente">Facturado anualmente</p>
+                    <p class="pe-facturado-anualmente">Facturado anualmente</p>
                     <ul class="lista-caracteristicas-servicio">
                         <li class="item-caracteristicas-servicio">Características básicas</li>
                         <li class="item-caracteristicas-servicio">Asistencia preferencial</li>
@@ -94,7 +105,7 @@
                     <span class="span-precio">Precio</span>
                     <span class="span-planes">Plan empresas</span>
                     <h3 class="h3-precios-planes">$799 /mes</h3>
-                    <p class="pe-facutrado-anualmente">Facturado anualmente</p>
+                    <p class="pe-facturado-anualmente">Facturado anualmente</p>
                     <ul class="lista-caracteristicas-servicio">
                         <li class="item-caracteristicas-servicio">Características freelancer</li>
                         <li class="item-caracteristicas-servicio">110GB de almacenamiento</li>
@@ -107,24 +118,24 @@
         </section>
     </main>
     <footer>
-        <article id="article-logo-footer">
+        <a id="link-logo-footer">
             <img src="img/logo-verde.png" alt="Logo verde Senpai">
             <span>Flex</span>
-        </article>
+        </a>
         <ul>
-            <li>Producto</li>
-            <li>Funcionalidades</li>
-            <li>Precios</li>
-            <li>Recursos</li>
-            <li>Carreras</li>
-            <li>Ayuda</li>
-            <li>Privacidad</li>
+            <li><a href="">Producto</a></li>
+            <li><a href="">Funcionalidades</a></li>
+            <li><a href="">Precios</a></li>
+            <li><a href="">Recursos</a></li>
+            <li><a href="">Carreras</a></li>
+            <li> <a href="">Ayuda</a></li>
+            <li><a href="">Privacidad</a></li>
         </ul>
         <p>© 2022 Flex. Un producto ficticio de Senpai</p>
     </footer>
 
     <article id="modal">
-        <img src="/img/logo-blanco.png" alt="Logo blanco Senpai">
+        <img src="/img/logo-blanco.png" alt="Logo blanco Senpai" class="logo">
         <h3>Ingresa a tu cuenta</h3>
         <p>y empieza a conseguir resultados</p>
 
