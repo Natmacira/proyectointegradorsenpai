@@ -195,7 +195,86 @@ body.burger-menu-opened {
                 padding: 20px;
                 margin-bottom: 5px;
                 color: white;
+                margin-top: 30px;
             }
         }
+    }
+}
+
+.tarjeta-area-servicios {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: $theme-green;
+        text-align: center;
+        padding: 5px;
+        font-size: 18px;
+
+        &.span-precio {
+            text-transform: uppercase;
+            font-size: 12px;
+            padding-bottom: 20px;
+            margin-top: 40px;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 22px;
+
+        .special-price-number {
+            font-size: 46px;
+            color: $theme-dark;
+
+            &::before {
+                content: "$";
+                font-size: 18px;
+                position: relative;
+                top: -23px;
+                left: -5px;
+            }
+        }
+    }
+
+    .pe-facturado-anualmente {
+        text-align: center;
+        font-size: 18px;
+        color: $theme-gray;
+        margin: 0;
+    }
+
+    ul {
+        max-width: 300px;
+        margin: auto;
+        padding-right: 35px;
+        padding-top: 21px;
+
+        li {
+            padding: 10px 0;
+            font-size: 15px;
+
+            &::before {
+                content: " ";
+                background-image: url("img/check-green-icon.svg.png");
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                display: inline-block;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .btn-solicitar-demo-area-servicios {
+        background-color: $theme-green;
+        color: white;
+        margin: 5px 75px;
+        border-radius: 5px;
+        border: 0;
+        padding: 8px 0;
+
+
     }
 }
