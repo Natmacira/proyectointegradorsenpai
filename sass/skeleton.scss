@@ -1,3 +1,11 @@
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
 #nav-home {
     display: none;
 }
@@ -36,25 +44,21 @@ a {
 }
 
 body.burger-menu-opened {
-    
     overflow: hidden;
     color: white;
-    
-
 
     #burger-button .burger-div-button {
-
         background-color: white;
 
         &:first-child {
             -webkit-transform: rotate(-45deg) translate(-9px, 6px);
             transform: rotate(-45deg) translate(-9px, 6px);
         }
-        
+
         &:nth-child(2) {
             opacity: 0;
         }
-        
+
         &:last-child {
             -webkit-transform: rotate(45deg) translate(-8px, -8px);
             transform: rotate(45deg) translate(-8px, -8px);
@@ -70,10 +74,39 @@ body.burger-menu-opened {
         left: 0;
         z-index: 1;
         background-color: $theme-dark;
-
     }
-} 
-    
+
+    #list-itmes-nav-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        .items-list-nav {
+            padding: 10px;
+        }
+    }
+
+    #list-btns-nav-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .btns-list-nav {
+            padding: 10px;
+
+            button {
+                background-color: $theme-green;
+                border-radius: 10px;
+                padding: 5px 50px;
+                border: 0;
+                font-weight: 900;
+                color: white;
+            }
+        }
+    }
+}
 
 .logo {
     width: 20px;
@@ -84,3 +117,50 @@ body.burger-menu-opened {
     display: inline-block;
 }
 
+#nuevo-title {
+    background-color: $theme-green;
+    display: block;
+    margin-left: 5px;
+    color: white;
+    width: 60px;
+    text-align: center;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+.general-titles-and-text {
+    margin-left: 5px;
+    padding-left: 4px;
+}
+
+#list-btns-section-header {
+    display: flex;
+    padding-left: 4px;
+    margin-left: 5px;
+
+   li {
+        
+        button {
+            border-radius: 10px;
+            margin-right: 20px;
+            padding: 13px;
+
+            &.btn-demo {
+                background-color: $theme-green;
+                color: white;
+                border: 0;
+            }
+
+            &.btn-registrarse {
+                background-color: $theme-blanco;
+                color: black;
+                border: solid 1px $theme-gray;
+            }
+        }
+
+        
+    }
+
+    
+}
