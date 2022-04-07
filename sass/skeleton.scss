@@ -1,5 +1,6 @@
 body {
     font-family: "Work Sans", sans-serif;
+    color: $theme-dark;
 }
 
 button {
@@ -139,8 +140,7 @@ body.burger-menu-opened {
     padding-left: 4px;
     margin-left: 5px;
 
-   li {
-        
+    li {
         button {
             border-radius: 10px;
             margin-right: 20px;
@@ -158,9 +158,44 @@ body.burger-menu-opened {
                 border: solid 1px $theme-gray;
             }
         }
+    }
+}
 
-        
+#image-header {
+    &::before {
+        content: url("img/circle3-yellow.svg");
+        position: absolute;
+        left: 10px;
+        top: 263px;
     }
 
-    
+    &::after {
+        content: url("img/dots3-blue.svg");
+        right: 22px;
+        position: absolute;
+        bottom: 267px;
+    }
+}
+
+#section-caracteristicas {
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 80px;
+
+        li {
+            max-width: 300px;
+
+            svg {
+                background-color: $theme-green;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 5px;
+                color: white;
+            }
+        }
+    }
 }
