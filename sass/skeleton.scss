@@ -197,6 +197,18 @@ h1 {
 .general-titles-and-text {
     margin-left: 5px;
     padding-left: 4px;
+
+    &.precios-flexibles {
+        @media (min-width: 1100px) {
+            font-size: 34px;
+        }
+    }
+
+    &.nuestra-facturacion {
+        @media (min-width: 1100px) {
+            font-size: 18px;
+        }
+    }
 }
 
 #section-header {
@@ -397,11 +409,17 @@ footer {
     margin-top: 20px;
     ul li {
         padding: 5px;
+        color: $theme-gray;
+        @media (min-width: 1100px) {
+            padding: 15px;
+           
+        }
     }
 
     ul {
         @media (min-width: 1100px) {
             display: flex;
+           
         }
     }
 }
@@ -510,4 +528,10 @@ body.modal-button-opened {
             }
         }
     }
+
+    
+}
+
+#copy-rights {
+    color: $theme-gray;
 }
