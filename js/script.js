@@ -11,15 +11,16 @@ window.addEventListener("load", function() {
 
 
    
-    const ingresarModalBtn = document.getElementById('ingresar-modal-btn');
+    const enterModalBtn = document.getElementById('ingresar-modal-btn');
+    const closedModalBtn = document.getElementById('close-modal');
 
     const modalToggler = () => {
 
         document.body.classList.toggle("modal-button-opened");
     }
 
-    ingresarModalBtn.addEventListener('click', modalToggler);
-
+    enterModalBtn.addEventListener('click', modalToggler);
+    closedModalBtn.addEventListener('click', modalToggler);
     
 
 

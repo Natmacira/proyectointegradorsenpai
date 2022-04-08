@@ -260,7 +260,7 @@ header .container #section-header {
 
 #article-precios {
     @media (min-width: 1100px) {
-       display: flex;
+        display: flex;
     }
 }
 
@@ -354,10 +354,11 @@ footer {
         padding: 5px;
     }
 
-    ul{
-    @media (min-width: 1100px) {
-        display: flex;
-     }}
+    ul {
+        @media (min-width: 1100px) {
+            display: flex;
+        }
+    }
 }
 
 .modal {
@@ -378,6 +379,16 @@ body.modal-button-opened {
         align-items: center;
         padding-top: 28px;
         text-align: center;
+        color: white;
+
+        #close-modal {
+            position: absolute;
+            right: 106px;
+            color: white;
+            background: transparent;
+            border: 0;
+            font-size: 28px;
+        }
 
         img {
             background-color: #2ad167;
@@ -394,6 +405,7 @@ body.modal-button-opened {
         h3 {
             font-size: 28px;
             margin-bottom: 10px;
+
         }
 
         .p-conseguir-resultados {
