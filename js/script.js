@@ -1,13 +1,24 @@
 window.addEventListener("load", function() {
 
     const burgerButton = document.getElementById('burger-button');
+    const itemsNav     = document.getElementsByClassName('items-list-nav');
 
     const burgerToggler = () => {
         document.body.classList.toggle("burger-menu-opened");
 
     }
 
+     const closedBurger = () => {
+         document.body.classList.remove("burger-menu-opened");
+     }
+
     burgerButton.addEventListener('click', burgerToggler);
+
+    for (let i = 0; i < itemsNav.length; i++) {
+        itemsNav[i].addEventListener('click', closedBurger);
+        
+    }
+     
 
 
    
