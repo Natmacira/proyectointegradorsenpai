@@ -1,5 +1,9 @@
+import image from '../img/header.jpg';
+import logo from '../img/logo-verde.png';
+
 const Header = () => {
 
+ 
 
     return(
         <header>
@@ -11,7 +15,7 @@ const Header = () => {
             </button>
             <nav id="nav-home">
                 <a id="link-logo-header">
-                    <img src={'img/logo-verde.png'} alt="Logo verde Senpai" class="logo"/>
+                    <img src={logo} alt="Logo verde Senpai" class="logo"/>
                     <span>Flex</span>
                 </a>
                 <ul id="list-itmes-nav-header">
@@ -36,7 +40,7 @@ const Header = () => {
                     </ul>
                 </article>
                 <figure id="image-header">
-                    <img src="img/header.jpg"
+                    <img src={image}
                         alt="foto de las oficinas, mesas grandes con ordenadores y gente trabajando."/>
                 </figure>
             </section>
