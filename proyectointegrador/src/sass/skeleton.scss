@@ -472,4 +472,20 @@ body.modal-button-opened {
 }
 #copy-rights {
     color: $theme-gray;
+ 
+}
+
+.counter {
+    
+        background-color: $theme-green;
+        border: none;
+        margin: 20px;
+        
+}
+
+.total-counter {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
 }
