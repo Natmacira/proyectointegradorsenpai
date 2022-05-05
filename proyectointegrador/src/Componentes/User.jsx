@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 import { useEffect, useState } from "react";
 
 const User = () => {
@@ -9,7 +9,8 @@ const User = () => {
     const getData = async () => {
       try {
         const response = await fetch(
-          `https://jsonplaceholder.typicode.com/posts?_limit=10`
+          `https://jsonplaceholder.typicode.com/posts?_limit=10.`
+
         );
 
         console.log(response);
@@ -36,7 +37,7 @@ const User = () => {
         {user &&
           user.map((item, index) => (
             <li key={index}>
-              <h3>{item.id}</h3>
+              <h3>{item.id} {item.title}</h3>
             </li>
           ))}
       </ul>
